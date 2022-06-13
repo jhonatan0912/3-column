@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&display=swap');
+:root{
+--Bright-orange: hsl(31, 77%, 52%);
+--Dark-cyan: hsl(184, 100%, 22%);
+--Very-dark-cyan: hsl(179, 100%, 13%);
+--Transparent-white-paragraphs: hsla(0, 0%, 100%, 0.75);
+--Very-light-gray-background-headings-buttons: hsl(0, 0%, 95%);
+--lexend-deca:'Lexend Deca', sans-serif;
+--big-shoulders:'Big Shoulders Display', cursive;
+}
+*{
+  margin: 0;
+  padding: 0;
+}
+body{
+  font-size: 15px;
+  max-width: 375px;
+  height: 150vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.container{
+  width: 90%;
+}
+.container__cards{
+  padding: 4em 2em;
+  color: var(--Transparent-white-paragraphs);
+  height: 300px;
+}
+.container__cards.first{
+  background-color: var(--Bright-orange);
+  border-top-left-radius: 10px;
+   border-top-right-radius: 10px;
+}
+.container__cards.second{
+  background-color: var(--Dark-cyan);
+}
+.container__cards.third{
+  background-color: var(--Very-dark-cyan);
+    border-bottom-left-radius: 10px;
+   border-bottom-right-radius: 10px;
+}
+.cards__img{
+  margin: 10px 0;
+}
+h3{
+  font-family: var(--big-shoulders);
+  font-size: 3em;
+  margin: 10px 0;
+}
+.card__paragraph{
+  font-family: var(--lexend-deca);
+  width: 85%;
+}
+.card__buttons{
+  width: 100px;
+  background-color: var(--Very-light-gray-background-headings-buttons);
+  text-decoration: none;
+  padding: 1em 1.5em;
+  border-radius: 50px;
+  display: inline-block;
+  margin: 20px 0;
+  font-family: var(--lexend-deca);
+}
+.card__buttons:active{
+background-color: transparent;
+border: 1px solid #fff;
+color: #fff;
+}
+.buttonOne{
+  color: var(--Bright-orange);
+}
+.buttonTwo{
+  color: var(--Dark-cyan);
+}
+.buttonThree{
+color: var(--Very-dark-cyan);
+}
+@media (min-width:1440px) {
+  body{
+    max-width: 1440px;
+    height: 100vh;
+  }
+  .container{
+    display: flex;
+    width:65%;
+  }
+  .container__cards.first{
+    border-radius: 0;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+.container__cards.third{
+    border-radius: 0;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+.card__buttons{
+  width: 110px;
+}
+}
+@media (min-width:1920px) {
+  body{
+    max-width: 1920px;
+  }
+  .container{
+    width:50%;
+  }
+}
